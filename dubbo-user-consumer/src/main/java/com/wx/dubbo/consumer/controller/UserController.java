@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class UserController {
 
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0", timeout = 120000)
     private UserService userService;
 
     @GetMapping("/user/{id}")

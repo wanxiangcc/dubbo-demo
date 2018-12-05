@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> listUsers() {
-        if (users.size() != 1024) {
-            for (int i = 0; i < 1024; ++i) {
+        if (users.size() < 100) {
+            for (int i = 0; i < 100 - users.size(); ++i) {
                 Faker faker = new Faker();
                 User user = new User();
                 user.setId(i + 1);
