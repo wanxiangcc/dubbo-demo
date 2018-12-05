@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>com.wx.dubbo</groupId>
-            <artifactId>user-api</artifactId>
+            <artifactId>dubbo-user-api</artifactId>
             <version>${parent.version}</version>
         </dependency>
     </dependencies>
